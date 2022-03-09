@@ -6,10 +6,9 @@ import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatDelegate
 import com.bumptech.glide.Glide
+import com.fandiaspraja.core.utils.PreferenceUtils
 import com.fandiaspraja.githubfundamentalandroid.R
-import com.fandiaspraja.githubfundamentalandroid.core.utils.PreferenceUtils
 import com.fandiaspraja.githubfundamentalandroid.ui.dashboard.DashboardActivity
-import kotlinx.android.synthetic.main.activity_setting.*
 import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity() {

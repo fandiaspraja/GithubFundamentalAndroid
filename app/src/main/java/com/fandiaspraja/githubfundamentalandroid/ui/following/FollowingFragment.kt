@@ -6,21 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.fandiaspraja.githubfundamentalandroid.R
-import com.fandiaspraja.githubfundamentalandroid.core.data.Resource
-import com.fandiaspraja.githubfundamentalandroid.core.domain.model.Followers
-import com.fandiaspraja.githubfundamentalandroid.core.domain.model.Following
-import com.fandiaspraja.githubfundamentalandroid.core.ui.FollowingAdapter
-import com.fandiaspraja.githubfundamentalandroid.core.utils.Constants
-import com.fandiaspraja.githubfundamentalandroid.databinding.FragmentFollowingBinding
-import com.fandiaspraja.githubfundamentalandroid.ui.detailfavorite.DetailFavoriteActivity
-import kotlinx.android.synthetic.main.fragment_following.*
+import com.fandiaspraja.core.data.Resource
+import com.fandiaspraja.core.domain.model.Following
+import com.fandiaspraja.core.ui.FollowingAdapter
+import com.fandiaspraja.core.utils.Constants
+import com.fandiaspraja.githubfundamentalandroid.databinding.FragmentFollowingUserBinding
+import com.fandiaspraja.githubfundamentalandroid.ui.detail.DetailUserActivity
+import kotlinx.android.synthetic.main.fragment_following_user.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 class FollowingFragment : Fragment() {
 
-    private var _binding: FragmentFollowingBinding? = null
+    private var _binding: FragmentFollowingUserBinding? = null
 
     private val binding get() = _binding!!
 
@@ -39,7 +37,7 @@ class FollowingFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentFollowingBinding.inflate(inflater, container, false)
+        _binding = FragmentFollowingUserBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -47,12 +45,12 @@ class FollowingFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        if ((activity as DetailFavoriteActivity).type.equals("online")){
+        if ((activity as DetailUserActivity).type.equals("online")){
 
-            (activity as DetailFavoriteActivity).username?.let { getFollowings(it) }
+            (activity as DetailUserActivity).username?.let { getFollowings(it) }
             observeFollowingUser()
         }else{
-            (activity as DetailFavoriteActivity).id?.let { getAllFollowing(it) }
+            (activity as DetailUserActivity).id?.let { getAllFollowing(it) }
 
             observeAllFollowing()
         }

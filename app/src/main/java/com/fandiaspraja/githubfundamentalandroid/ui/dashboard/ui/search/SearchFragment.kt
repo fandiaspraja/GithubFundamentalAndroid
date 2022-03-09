@@ -5,17 +5,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.fandiaspraja.githubfundamentalandroid.core.data.Resource
-import com.fandiaspraja.githubfundamentalandroid.core.ui.UserAdapter
-import com.fandiaspraja.githubfundamentalandroid.core.utils.Constants
+import com.fandiaspraja.core.data.Resource
+import com.fandiaspraja.core.ui.UserAdapter
+import com.fandiaspraja.core.utils.Constants
 import com.fandiaspraja.githubfundamentalandroid.databinding.FragmentSearchBinding
-import com.fandiaspraja.githubfundamentalandroid.ui.detailfavorite.DetailFavoriteActivity
+import com.fandiaspraja.githubfundamentalandroid.ui.detail.DetailUserActivity
 import kotlinx.android.synthetic.main.fragment_search.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -46,7 +43,10 @@ class SearchFragment : Fragment() {
         progress_search_fav.visibility = View.GONE
 
         userAdapter.onItemClick = { selectedData ->
-            val intent = Intent(requireActivity(), DetailFavoriteActivity::class.java)
+//            val uri = Uri.parse("github://favorite")
+//            startActivity(Intent(Intent.ACTION_VIEW, uri))
+
+            val intent = Intent(requireActivity(), DetailUserActivity::class.java)
             intent.putExtra("username", selectedData.login)
             intent.putExtra("type", "online")
             intent.putExtra("id", selectedData.id)

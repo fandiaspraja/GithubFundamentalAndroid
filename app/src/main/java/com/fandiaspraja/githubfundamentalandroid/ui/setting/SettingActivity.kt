@@ -9,15 +9,14 @@ import androidx.appcompat.app.AppCompatDelegate
 import com.fandiaspraja.githubapp.ui.setting.DatePickerFragment
 import com.fandiaspraja.githubapp.ui.setting.TimePickerFragment
 import com.fandiaspraja.githubfundamentalandroid.R
-import com.fandiaspraja.githubfundamentalandroid.core.broadcast.AlarmReceiver
-import com.fandiaspraja.githubfundamentalandroid.core.utils.PreferenceUtils
+import com.fandiaspraja.core.utils.PreferenceUtils
 import kotlinx.android.synthetic.main.activity_setting.*
 import java.text.SimpleDateFormat
 import java.util.*
 
 class SettingActivity : AppCompatActivity(), View.OnClickListener, DatePickerFragment.DialogDateListener, TimePickerFragment.DialogTimeListener {
 
-    private lateinit var alarmReceiver: AlarmReceiver
+    private lateinit var alarmReceiver: com.fandiaspraja.core.broadcast.AlarmReceiver
 
     companion object {
         private const val DATE_PICKER_TAG = "DatePicker"
@@ -33,12 +32,12 @@ class SettingActivity : AppCompatActivity(), View.OnClickListener, DatePickerFra
 
         preferenceUtils = PreferenceUtils(this)
 
-        alarmReceiver = AlarmReceiver()
+        alarmReceiver = com.fandiaspraja.core.broadcast.AlarmReceiver()
 
         switch_alarm.setOnClickListener {
             if (switch_alarm.isChecked){
                 Toast.makeText(this, "Turn On Alarm", Toast.LENGTH_SHORT).show()
-                alarmReceiver.setRepeatingAlarm(this, AlarmReceiver.TYPE_REPEATING,
+                alarmReceiver.setRepeatingAlarm(this, com.fandiaspraja.core.broadcast.AlarmReceiver.TYPE_REPEATING,
                     "09:00", "Let's find user popular user on Github!")
 
                 preferenceUtils.save("gitnotif", true)

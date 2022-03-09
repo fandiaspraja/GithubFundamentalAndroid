@@ -8,3 +8,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "GithubFundamentalAndroid"
 include ':app'
+include ':app:favorite'
+include ':core'

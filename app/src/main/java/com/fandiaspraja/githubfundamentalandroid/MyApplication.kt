@@ -1,9 +1,10 @@
 package com.fandiaspraja.githubfundamentalandroid
 
 import android.app.Application
-import com.fandiaspraja.githubfundamentalandroid.core.di.databaseModule
-import com.fandiaspraja.githubfundamentalandroid.core.di.networkModule
-import com.fandiaspraja.githubfundamentalandroid.core.di.repositoryModule
+import com.fandiaspraja.core.di.databaseModule
+import com.fandiaspraja.core.di.networkModule
+import com.fandiaspraja.core.di.repositoryModule
+
 import com.fandiaspraja.githubfundamentalandroid.di.userCaseModule
 import com.fandiaspraja.githubfundamentalandroid.di.viewModelModule
 import org.koin.android.ext.koin.androidContext

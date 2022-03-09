@@ -14,8 +14,8 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import com.fandiaspraja.core.utils.PreferenceUtils
 import com.fandiaspraja.githubfundamentalandroid.R
-import com.fandiaspraja.githubfundamentalandroid.core.utils.PreferenceUtils
 import com.fandiaspraja.githubfundamentalandroid.databinding.ActivityDashboardBinding
 import com.fandiaspraja.githubfundamentalandroid.ui.setting.SettingActivity
 

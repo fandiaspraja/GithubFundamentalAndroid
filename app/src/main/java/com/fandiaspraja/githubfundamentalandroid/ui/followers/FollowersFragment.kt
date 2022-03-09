@@ -1,25 +1,23 @@
 package com.fandiaspraja.githubfundamentalandroid.ui.followers
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.fandiaspraja.githubfundamentalandroid.R
-import com.fandiaspraja.githubfundamentalandroid.core.data.Resource
-import com.fandiaspraja.githubfundamentalandroid.core.domain.model.Followers
-import com.fandiaspraja.githubfundamentalandroid.core.ui.FollowersAdapter
-import com.fandiaspraja.githubfundamentalandroid.core.utils.Constants
-import com.fandiaspraja.githubfundamentalandroid.databinding.FragmentFollowersBinding
-import com.fandiaspraja.githubfundamentalandroid.ui.detailfavorite.DetailFavoriteActivity
-import kotlinx.android.synthetic.main.fragment_followers.*
+import com.fandiaspraja.core.data.Resource
+import com.fandiaspraja.core.domain.model.Followers
+import com.fandiaspraja.core.ui.FollowersAdapter
+import com.fandiaspraja.core.utils.Constants
+import com.fandiaspraja.githubfundamentalandroid.databinding.FragmentFollowersUserBinding
+import com.fandiaspraja.githubfundamentalandroid.ui.detail.DetailUserActivity
+import kotlinx.android.synthetic.main.fragment_followers_user.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class FollowersFragment : Fragment() {
 
-    private var _binding: FragmentFollowersBinding? = null
+    private var _binding: FragmentFollowersUserBinding? = null
 
     private val binding get() = _binding!!
 
@@ -37,7 +35,7 @@ class FollowersFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentFollowersBinding.inflate(inflater, container, false)
+        _binding = FragmentFollowersUserBinding.inflate(inflater, container, false)
 
         return binding.root
     }
@@ -46,12 +44,12 @@ class FollowersFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        if ((activity as DetailFavoriteActivity).type.equals("online")){
-            (activity as DetailFavoriteActivity).username?.let { getFollowers(it) }
+        if ((activity as   DetailUserActivity).type.equals("online")){
+            (activity as DetailUserActivity).username?.let { getFollowers(it) }
 
             observeFollowersUser()
         }else{
-            (activity as DetailFavoriteActivity).id?.let { getAllFollowers(it) }
+            (activity as DetailUserActivity).id?.let { getAllFollowers(it) }
 
             observegetAllFollowers()
         }

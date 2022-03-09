@@ -19,15 +19,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GithubFundamentalAndroid.NoActionBar">
         <activity
+            android:name=".ui.detail.DetailUserActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.dashboard.DashboardActivity"
             android:exported="true"
             android:label="@string/title_activity_dashboard"
             android:theme="@style/Theme.GithubFundamentalAndroid.NoActionBar.NoActionBar" />
         <activity
             android:name=".ui.setting.SettingActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ui.detailfavorite.DetailFavoriteActivity"
             android:exported="true" />
         <activity
             android:name=".ui.splash.SplashActivity"
