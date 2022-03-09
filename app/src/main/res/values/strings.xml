@@ -19,4 +19,7 @@
     <string name="settings">Settings</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="remove_favorite">Remove favorite</string>
+    <string name="github_logo">Github logo</string>
+    <string name="fab_dashboard">fab dashboard</string>
 </resources>

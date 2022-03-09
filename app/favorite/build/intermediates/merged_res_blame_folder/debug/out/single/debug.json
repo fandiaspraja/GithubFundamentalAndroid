@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/build/intermediates/merged_res/debug/drawable_ic_fav_check.xml.flat",
+        "source": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/res/drawable/ic_fav_check.xml"
+    },
+    {
+        "merged": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/build/intermediates/merged_res/debug/layout_fragment_favorite.xml.flat",
+        "source": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/res/layout/fragment_favorite.xml"
+    },
+    {
+        "merged": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/build/intermediates/merged_res/debug/layout_activity_detail_favorite.xml.flat",
+        "source": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/res/layout/activity_detail_favorite.xml"
+    },
+    {
+        "merged": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/build/intermediates/merged_res/debug/drawable_ic_fav_uncheck.xml.flat",
+        "source": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/res/drawable/ic_fav_uncheck.xml"
+    },
+    {
+        "merged": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/build/intermediates/merged_res/debug/layout_fragment_following_fav.xml.flat",
+        "source": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/res/layout/fragment_following_fav.xml"
+    },
+    {
+        "merged": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/build/intermediates/merged_res/debug/layout_fragment_followers_fav.xml.flat",
+        "source": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/res/layout/fragment_followers_fav.xml"
+    }
+]

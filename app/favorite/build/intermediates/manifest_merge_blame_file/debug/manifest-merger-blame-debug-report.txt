@@ -1,0 +1,42 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:dist="http://schemas.android.com/apk/distribution"
+4    featureSplit="favorite"
+5    package="com.fandiaspraja.githubfundamentalandroid"
+6    android:versionCode="1"
+7    android:versionName="1.0" >
+8
+9    <uses-sdk android:minSdkVersion="21" />
+9-->/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/AndroidManifest.xml
+10
+11    <dist:module
+11-->/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/AndroidManifest.xml:6:5-14:19
+12        dist:instant="false"
+12-->/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/AndroidManifest.xml:7:9-29
+13        dist:title="@string/title_favorite" >
+13-->/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/AndroidManifest.xml:8:9-44
+14        <dist:delivery>
+14-->/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/AndroidManifest.xml:9:9-11:25
+15            <dist:install-time />
+15-->/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/AndroidManifest.xml:10:13-34
+16        </dist:delivery>
+17
+18        <dist:fusing dist:include="true" />
+18-->/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/AndroidManifest.xml:13:9-44
+18-->/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/AndroidManifest.xml:13:22-41
+19    </dist:module>
+20
+21    <application
+21-->/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/AndroidManifest.xml:16:5-20:19
+22        android:debuggable="true"
+23        android:testOnly="true" >
+24        <activity
+24-->/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/AndroidManifest.xml:17:9-19:40
+25            android:name="com.fandiaspraja.githubfundamentalandroid.favorite.detailfavorite.DetailFavoriteActivity"
+25-->/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/AndroidManifest.xml:18:13-66
+26            android:exported="false"
+26-->/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/AndroidManifest.xml:19:13-37
+27            android:splitName="favorite" />
+28    </application>
+29
+30</manifest>

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_detail_favorite.xml",
+        "source": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/res/layout/activity_detail_favorite.xml"
+    },
+    {
+        "merged": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_followers_fav.xml",
+        "source": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/res/layout/fragment_followers_fav.xml"
+    },
+    {
+        "merged": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_following_fav.xml",
+        "source": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/res/layout/fragment_following_fav.xml"
+    },
+    {
+        "merged": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_favorite.xml",
+        "source": "/Users/fikryandiaspraja/AndroidStudioProjects/GithubFundamentalAndroid/app/favorite/src/main/res/layout/fragment_favorite.xml"
+    }
+]

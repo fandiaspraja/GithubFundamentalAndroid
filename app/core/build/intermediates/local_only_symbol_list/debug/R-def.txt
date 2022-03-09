@@ -1,0 +1,10 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_access_time_black
+id img_user
+id img_user_fav
+id tv_name
+id tv_name_fav
+id tv_type
+layout item_favorite
+layout item_search

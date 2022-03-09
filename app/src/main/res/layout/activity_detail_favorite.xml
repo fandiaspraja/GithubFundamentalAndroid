@@ -418,7 +418,9 @@
                 android:clickable="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_fav_uncheck" />
+                app:srcCompat="@drawable/ic_fav_uncheck"
+                android:contentDescription="@string/remove_favorite"
+                android:focusable="true" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+com/fandiaspraja/core/data/local/room/GithubDao_Impl.java
+ com.fandiaspraja.core.data.local.room.GithubDao_Impl
+ com.fandiaspraja.core.data.local.room.GithubDao_Impl$1
+ com.fandiaspraja.core.data.local.room.GithubDao_Impl$10
+ com.fandiaspraja.core.data.local.room.GithubDao_Impl$11
+ com.fandiaspraja.core.data.local.room.GithubDao_Impl$2
+ com.fandiaspraja.core.data.local.room.GithubDao_Impl$3
+ com.fandiaspraja.core.data.local.room.GithubDao_Impl$4
+ com.fandiaspraja.core.data.local.room.GithubDao_Impl$5
+ com.fandiaspraja.core.data.local.room.GithubDao_Impl$6
+ com.fandiaspraja.core.data.local.room.GithubDao_Impl$7
+ com.fandiaspraja.core.data.local.room.GithubDao_Impl$8
+ com.fandiaspraja.core.data.local.room.GithubDao_Impl$9
+com/fandiaspraja/core/databinding/ItemSearchBinding.java
+ com.fandiaspraja.core.databinding.ItemSearchBinding
+com/fandiaspraja/core/BuildConfig.java
+ com.fandiaspraja.core.BuildConfig
+com/fandiaspraja/core/data/local/room/GithubDatabase_Impl.java
+ com.fandiaspraja.core.data.local.room.GithubDatabase_Impl
+ com.fandiaspraja.core.data.local.room.GithubDatabase_Impl$1
+com/fandiaspraja/core/databinding/ItemFavoriteBinding.java
+ com.fandiaspraja.core.databinding.ItemFavoriteBinding
