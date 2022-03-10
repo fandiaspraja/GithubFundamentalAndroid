@@ -73,6 +73,8 @@ dependencies {
 //    implementation 'com.github.thunder413:DateTimeUtils:3.0'
 
 
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.8.1'
+
 
     implementation 'org.apache.commons:commons-lang3:3.6'
 
@@ -82,4 +84,8 @@ dependencies {
 
     debugImplementation "com.github.chuckerteam.chucker:library:3.5.2"
     releaseImplementation "com.github.chuckerteam.chucker:library-no-op:3.5.2"
+
+//    security preferences
+    implementation "androidx.security:security-crypto:1.1.0-alpha02"
+    implementation 'com.scottyab:secure-preferences-lib:0.1.7'
 }

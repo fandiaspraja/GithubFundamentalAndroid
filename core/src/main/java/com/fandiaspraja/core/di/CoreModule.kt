@@ -14,6 +14,8 @@ import com.fandiaspraja.core.domain.repository.IUserRepository
 import com.fandiaspraja.core.utils.AppExecutors
 import com.fandiaspraja.core.utils.Constants
 import com.fandiaspraja.core.utils.PreferenceUtils
+import net.sqlcipher.database.SQLiteDatabase
+import net.sqlcipher.database.SupportFactory
 import okhttp3.Cache
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -34,10 +36,14 @@ import javax.net.ssl.X509TrustManager
 val databaseModule = module {
     factory { get<GithubDatabase>().githubDao() }
     single {
+        val passphrase: ByteArray = SQLiteDatabase.getBytes("fandiaspraja".toCharArray())
+        val factory = SupportFactory(passphrase)
         Room.databaseBuilder(
             androidContext(),
             GithubDatabase::class.java, "Github.db"
-        ).fallbackToDestructiveMigration().build()
+        ).fallbackToDestructiveMigration()
+            .openHelperFactory(factory)
+            .build()
     }
 }
 
